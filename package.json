@@ -1,6 +1,6 @@
 {
-  "name": "data-to-json",
-  "version": "1.0.3",
+  "name": "data2json",
+  "version": "1.0.4",
   "description": "Reads a text file, CSV file or data variable having a table and returns an array of obects. In which each object consists of all headers as keys and there data as values.",
   "main": "data_to_json.js",
   "scripts": {
@@ -54,5 +54,8 @@
     "chai": "^4.2.0",
     "mocha": "^7.0.1",
     "nyc": "^15.0.0"
+  },
+  "directories": {
+    "test": "test"
   }
 }
