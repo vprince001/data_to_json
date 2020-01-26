@@ -1,4 +1,4 @@
-<h1 align="center">txt-file-to-json</h1>
+<h1 align="center">data-to-json</h1>
 
 <div align="center">
 
@@ -22,7 +22,7 @@ npm i --save data-to-json
 Use `filePath` key to provide `TEXT or CSV data from a file`.
 
 ```javascript
-const dataToJson = require("data_to_json");
+const dataToJson = require("data-to-json");
 
 Use `.txt` to use TXT data.
 const dataInJSON = dataToJson.txt({ filePath: "./filePath.txt" }).toJson();
@@ -36,7 +36,7 @@ const dataInJSON = dataToJson.csv({ filePath: "./filePath.csv" }).toJson();
 Use `data` key to provide `TEXT data from variable or directly`.
 
 ```javascript
-const dataToJson = require("data_to_json");
+const dataToJson = require("data-to-json");
 
 Use `.txt` to use TXT data.
 const dataInJSON = dataToJson.txt({ data: someTEXTData }).toJson();
@@ -96,7 +96,7 @@ Tameka,Fisher,8800111XXX,null,"7693 ~ Honey Creek St., Redondo Beach, "CA"      
 Use `.records` to get required number of rows.
 
 ```javascript
-const dataToJson = require("data_to_json");
+const dataToJson = require("data-to-json");
 const dataInJSON = dataToJson.txt({ filePath: "./filePath.txt" }).records(1).toJson();
 
 OR
@@ -104,7 +104,7 @@ OR
 const dataInJSON = dataToJson.csv({ filePath: "./filePath.csv" }).records(1).toJson();
 ```
 
-#### Sample output when `noOfRecords` is `1` (json data) :
+#### Sample output when `.records` is `1` (json data) :
 
 ```
 [
