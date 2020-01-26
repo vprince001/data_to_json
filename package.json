@@ -1,0 +1,15 @@
+{
+  "name": "data-to-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data_to_json.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "vprince001@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "csv-file-to-json": "^2.0.4",
+    "txt-file-to-json": "^3.0.2"
+  }
+}
