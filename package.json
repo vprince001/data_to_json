@@ -1,6 +1,6 @@
 {
   "name": "data-to-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reads a text file, CSV file or data variable having a table and returns an array of obects. In which each object consists of all headers as keys and there data as values.",
   "main": "data_to_json.js",
   "scripts": {
