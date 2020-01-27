@@ -1,4 +1,6 @@
-<h1 align="center">data-to-json</h1>
+<p align="center">
+  <img src="./resources/data_to_json.png" width="300" height="200"/>
+</p>
 
 <div align="center">
 
@@ -20,35 +22,37 @@ npm i --save data-to-json
 ### In module system
 
 Use `filePath` key to provide `TEXT or CSV data from a file`.
-
 ```javascript
 const dataToJson = require("data-to-json");
+```
+<br>
 
 Use `.txt` to use TXT data.
+```javascript
 const dataInJSON = dataToJson.txt({ filePath: "./filePath.txt" }).toJson();
+```
 
 OR
 
 Use `.csv` to use CSV data.
+```javascript
 const dataInJSON = dataToJson.csv({ filePath: "./filePath.csv" }).toJson();
 ```
+<br>
 
 Use `data` key to provide `TEXT data from variable or directly`.
-
 ```javascript
-const dataToJson = require("data-to-json");
-
-Use `.txt` to use TXT data.
 const dataInJSON = dataToJson.txt({ data: someTEXTData }).toJson();
+```
 
 OR
 
-Use `.csv` to use CSV data.
+```javascript
 const dataInJSON = dataToJson.csv({ data: someCSVData }).toJson();
 ```
+<br>
 
 #### Sample input (txt data) :
-
 ```
 FIRST_NAME     LAST_NAME        NUMBER               EMAIL                        ADDRESS
 Debra          Burks            880012XXXX           debra.burks@yahoo.com        9273 Thome Ave., `Orchard Park`, NY - 14127
@@ -57,7 +61,6 @@ Tameka         Fisher           880111XXXX           null                       
 ```
 
 #### Sample input (csv data) :
-
 ```
 FIRST_NAME,LAST_NAME,NUMBER,EMAIL,ADDRESS
 Debra,Burks,880012XXXX,debra.burks@yahoo.com,"9273 Thome Ave., `Orchard Park`, NY - 14127"
@@ -66,7 +69,6 @@ Tameka,Fisher,8800111XXX,null,"7693 ~ Honey Creek St., Redondo Beach, "CA"      
 ```
 
 #### Sample output (json data) :
-
 ```
 [
   {
@@ -92,20 +94,21 @@ Tameka,Fisher,8800111XXX,null,"7693 ~ Honey Creek St., Redondo Beach, "CA"      
   }
 ]
 ```
+<br>
 
 Use `.records` to get required number of rows.
-
 ```javascript
-const dataToJson = require("data-to-json");
 const dataInJSON = dataToJson.txt({ filePath: "./filePath.txt" }).records(1).toJson();
+```
 
 OR
 
+```javascript
 const dataInJSON = dataToJson.csv({ filePath: "./filePath.csv" }).records(1).toJson();
 ```
+<br>
 
 #### Sample output when `.records` is `1` (json data) :
-
 ```
 [
   {
@@ -117,3 +120,9 @@ const dataInJSON = dataToJson.csv({ filePath: "./filePath.csv" }).records(1).toJ
   }
 ]
 ```
+<br>
+
+# References
+* To convert only text to json. Try - https://www.npmjs.com/package/txt-file-to-json
+* To convert only csv to json. Try - https://www.npmjs.com/package/csv-file-to-json
+
