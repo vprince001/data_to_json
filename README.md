@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./resources/data_to_json.png" width="300" height="200"/>
+  <img src="./resources/data_to_json.png" width="400" height="200"/>
 </p>
 
 <div align="center">
